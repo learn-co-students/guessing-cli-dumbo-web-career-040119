@@ -7,14 +7,14 @@ def run_guessing_game
     break if input == "exit"
     if input.to_i == random.to_i
       puts "You guessed the correct number!"
-      puts "Type exit to leave program"
+      puts "Type exit to leave program, enter to try again."
       input = gets.chomp
       break if input == "exit"
       random = rand(1..6)
       input = 0
     else
       puts "The computer guessed #{random}."
-      puts "Type exit to leave program"
+      puts "Type exit to leave program, enter to try again."
       input = gets.chomp
       break if input == "exit"
       random = rand(1..6)
